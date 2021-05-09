@@ -5,3 +5,5 @@ random=$(( RANDOM%1000 ));
 arr[$i]=$random;
 done
 echo ${arr[@]}
+printf '%s\n' "${arr[@]}" | sort -n
+
